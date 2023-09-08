@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html{
+    font-family: 'poppins', cursive;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.mainDiv{
+    width: 100vw; 
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.mainDiv button{
+    font-family: 'poppins', cursive;
+    font-weight: bold;
+    width: 15%;
+    height: 60px;
+    background-color: rgb(178, 236, 170);
+    border-radius: 25px;
+    font-weight: bolder;
+    border: solid black 1px;
+    font-size: 15px;
+}
+
+.mainDiv button:hover{
+    opacity: 0.9;
+}
+
+.mainDiv button:active{
+    opacity: 0.5;
+}
+
+.mainDiv input{
+    text-align: center;
+    width: 33%;
+    height: 60px;
+    border-radius: 20px;
+    border: black solid 2px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.resultDiv{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 40em;
+    height: 20em;
+    background: rgb(104, 255, 212);
+    border: rgb(1, 69, 69) dotted 10px;
+    border-radius: 100px;
+    animation-duration: 1s;
+    animation-delay: 0s;
+
+}
+
+@keyframes slide{
+    from{
+        transform: translateY(80vh);
+    }
+
+    to{
+        transform: translateY(1vh);
+    }
+}
+
+#scoreP{
+    font-weight: bold;
+    font-size: 30px;
+}
